@@ -1,0 +1,261 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /*position: absolute [used so that the bg img is visible behind the navbar] */
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgba(19, 19, 19, 0.78);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /*z-index used so that content should not get overlapped by bgcolor*/
+    opacity: 0.8;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 0px 15px;
+}
+
+#logo img {
+
+    height: 74px;
+    margin: 3px 16px;
+    border-radius: 60px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: rgb(72, 218, 223);
+    display: block;
+    padding: 2px 55px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: aquamarine;
+    background-color: rgba(134, 134, 134, 0.438);
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 296px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 66px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../Images/bg2.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 433px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: cornflowerblue;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: rgb(10, 248, 248);
+    border-radius: 10px;
+    margin: 2px 2px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services {
+    margin: 6px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(255, 152, 152);
+    padding: 7px;
+    margin: 8px 6px;
+    border-radius: 28px;
+    background-color: #fff1f0;
+}
+
+#services .box img {
+    height: 7rem;
+    margin: auto;
+    display: block;
+    border-radius: 1.7rem;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+#servicesbox {
+    /* border: 2px solid salmon; */
+    margin: 31px 0px;
+}
+
+#servicesbox h1 {
+    margin: 12px 0px;
+    /* height: 418px;  */
+}
+
+/* Clients Section */
+#client-section {
+    /* height: 318px; */
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    /* margin: 12px 0px; */
+    position: absolute;
+    background: url('../Images/bg\ new\ yos.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 306px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 124px;
+    border-radius: 70px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+    height: 428px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 428px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../Images/contactus.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.8rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box input {
+    border-radius: 4px;
+}
+
+#contact-box label {
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.7rem;
+    padding: 24px;
+}
+
+
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid grey;
+    background-color: grey;
+    color: salmon;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(100, 99, 99, 0.747);
+}
+
+.center {
+    text-align: center;
+}
